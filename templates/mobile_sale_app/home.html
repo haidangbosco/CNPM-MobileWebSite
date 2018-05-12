@@ -1,0 +1,192 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% load filter_extras %}
+{% block body %}
+    <!-- Slideshow container -->
+    <div class="container">
+        <div class="slide-row">
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="item-slide fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="{% static 'mobile_sale_app/images/slide1.jpg' %}" style="width:100%">
+                </div>
+
+                <div class="item-slide fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="{% static 'mobile_sale_app/images/slide2.jpg' %}" style="width:100%">
+                </div>
+
+                <div class="item-slide fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="{% static 'mobile_sale_app/images/slide3.jpg' %}" style="width:100%">
+                </div>
+
+                <div class="item-slide fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="{% static 'mobile_sale_app/images/slide4.jpg' %}" style="width:100%">
+                </div>
+
+                <div class="item-slide fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="{% static 'mobile_sale_app/images/slide5.jpg' %}" style="width:100%">
+                </div>
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                {% if is_none %}
+                    <section class="product-content">
+                        <h1 class="title">
+                            <span>
+                                Không có kết quả cho "{{ keyword }}"
+                            </span>
+                        </h1>
+                        <h1 class="suggest">
+                            <span>
+                                Sản phẩm gợi ý
+                            </span>
+                        </h1>
+                        <div class="product-block clearfix">
+                            <div class="product-list row">
+                                {% for product in other_product %}
+                                    <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                                        <div class="product-item wow pulse">
+                                            <div class="image image-resize">
+                                                <a href="{% url 'mobile_sale_app:product_detail' pk=product.pk %}">
+                                                    <img src="../media/{{ product.img }}"
+                                                         alt="{{ product.name }}"
+                                                         class="img-responsive lazy-img"/>
+                                                </a>
+                                                <span class="promotion">-{{ product.sale.sale_rate }}%</span>
+                                            </div>
+                                            <div class="right-block">
+                                                <h2 class="name">
+                                                    <a href="{% url 'mobile_sale_app:product_detail' pk=product.pk %}">{{ product.name }}</a>
+                                                </h2>
+                                                <div class="rating">
+                                                    <div class="rating-1">
+                                                    <span class="rating-img">
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    {% if product.sale.type %}
+                                                        <span class="price-new">{{ product.price_sale|intcomma  }}&nbsp;₫</span>
+                                                        <span class="price-old">{{ product.price|intcomma  }}&nbsp;₫</span>
+                                                    {% else %}
+                                                        <span class="price-new">{{ product.price|intcomma  }}&nbsp;₫</span>
+                                                    {% endif %}
+                                                </div>
+                                                <div class="action">
+                                                    <a class="btn-add-cart" href="/payment/{{ product.id }}/">Mua</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </section>
+                {% else %}
+                    <section class="product-content">
+                        <h1 class="title">
+                            <span>
+                                Sản phẩm
+                            </span>
+                        </h1>
+                    <nav class="product-filter clearfix">
+                        <div class="sort">
+                            <span>Sắp xếp</span>
+                            <select class="selectProductSort" id="lbsort">
+                                        <option value="?sort=name&order=asc">Mặc định</option>
+                                        <option value="?sort=price&order=asc">Giá tăng dần</option>
+                                        <option value="?sort=price&order=desc">Giá giảm dần</option>
+                                        <option value="?sort=name&order=asc">Tên sản phẩm: A to Z</option>
+                                        <option value="?sort=name&order=desc">Tên sản phẩm: Z to A</option>
+                            </select>
+                        </div>
+                    </nav>
+                        <div class="product-block clearfix">
+                            <div class="product-list row">
+                                {% for product in products %}
+                                    <div class="col-md-3 col-sm-3 col-xs-12 product-resize product-item-box">
+                                        <div class="product-item wow pulse">
+                                            <div class="image image-resize">
+                                                <a href="{% url 'mobile_sale_app:product_detail' pk=product.pk %}">
+                                                    <img src="../media/{{ product.img }}"
+                                                         alt="{{ product.name }}"
+                                                         class="img-responsive lazy-img"/>
+                                                </a>
+                                                <span class="promotion">-{{ product.sale.sale_rate }}%</span>
+                                            </div>
+                                            <div class="right-block">
+                                                <h2 class="name">
+                                                    <a href="{% url 'mobile_sale_app:product_detail' pk=product.pk %}">{{ product.name }}</a>
+                                                </h2>
+                                                <div class="rating">
+                                                    <div class="rating-1">
+                                                    <span class="rating-img">
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                                <div class="price">
+                                                    {% if product.sale.type %}
+                                                        <span class="price-new">{{ product.price_sale|intcomma  }}&nbsp;₫</span>
+                                                        <span class="price-old">{{ product.price|intcomma  }}&nbsp;₫</span>
+                                                    {% else %}
+                                                        <span class="price-new">{{ product.price|intcomma  }}&nbsp;₫</span>
+                                                    {% endif %}
+                                                </div>
+                                                <div class="action">
+                                                    <a class="btn-add-cart" href="/payment/{{ product.id }}/">Mua</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="navigation">
+                            <ul class="pagination">
+                                <span class="step-links">
+                                    {% if products.has_previous %}
+                                        <li><a href="?page=1">&laquo; First</a></li>
+                                        <li><a href="?page={{ products.previous_page_number }}">previous</a></li>
+                                    {% endif %}
+                                    <li class="current-page"><a href="?page={{ products.number }}">{{ products.number }}</a></li>
+                                    {% if products.has_next %}
+                                        <li><a href="?page={{ products.next_page_number }}">next</a></li>
+                                        <li><a href="?page={{ products.paginator.num_pages }}">last &raquo;</a></li>
+                                    {% endif %}
+                                </span>
+                            </ul>
+                        </div>
+                    {% endif %}
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'mobile_sale_app/js/slide.js' %}"></script>
+{% endblock %}
+

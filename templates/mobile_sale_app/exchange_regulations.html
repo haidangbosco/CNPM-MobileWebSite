@@ -1,0 +1,119 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% block body %}
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="breadcrumb clearfix">
+                        <ul>
+                            <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home">
+                                <a title="Đến trang chủ" href="/" itemprop="url"><span itemprop="title">Trang chủ</span></a>
+                            </li>
+                            <li class="icon-li"><strong>Quy định đổi trả</strong></li>
+                        </ul>
+                    </div>
+                    <div class="page-option">
+                        <h1 class="title">
+                            <span>Quy định đổi trả</span>
+                        </h1>
+                        <div class="page-option-block">
+                            <p style="border: 0px; margin: 0px 0px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                Quý khách có thể thực hiện đổi trả hàng trong vòng 14 ngày kể từ ngày nhận hàng cho các
+                                sản phẩm đặt mua tại RUNECOM Các sản phẩm thực hiện đổi trả phải là sản phẩm không nằm
+                                trong danh mục hạn chế, không có dấu hiệu đã qua sử dụng và còn nguyên tem, mác, nguyên
+                                đai kiện ban đầu (trừ trường hợp sản phẩm bị lỗi hoặc hư hại trong quá trình vận
+                                chuyển). <br/>
+                                <br/>
+                                Quy trình đổi trả hàng được thực hiện khi kiện hàng được hoàn về tại kho hàng của
+                                RUNECOM. Chúng tôi sẽ thực hiện các bước tiếp theo để kiểm tra chất lượng sản phẩm và
+                                tiến hành đổi/trả hàng hoặc hoàn tiền theo yêu cầu của quý khách. Một số điều kiện có
+                                thể đi kèm, quý khách vui lòng tham khảo thông tin chi tiết bên dưới:</p>
+                            <p style="border: 0px; margin: 0px 0px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">1. Điều kiện đổi trả
+                                    hàng</strong></p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                Tất cả mặt hàng mua từ RUNECOM và không nằm trong danh mục hạn chế bên dưới đều có thể
+                                hoàn trả trong vòng 14 ngày kể từ ngày nhận hàng ( trừ khi có quy định gì khác). Chúng
+                                tôi chỉ chấp nhận đổi trả cho các sản phẩm còn nguyên điều kiện ban đầu, sản phẩm chưa
+                                qua sử dụng, bao gồm và không giới hạn ở:</p>
+                            <ul style="border: 0px; margin: 0px 0px 0px 20px; padding-right: 0px; padding-left: 0px; font-size: 14px; list-style: none; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <li style="border: 0px; margin: 0px; padding: 0px; list-style: none;">
+                                    + Còn nguyên đóng gói và bao bì không bị móp rách
+                                </li>
+                                <li style="border: 0px; margin: 0px; padding: 0px; list-style: none;">
+                                    + Đầy đủ các bộ phận, chi tiết, phụ kiện.
+                                </li>
+                                <li style="border: 0px; margin: 0px; padding: 0px; list-style: none;">
+                                    + Tem/ phiếu bảo hành, tem thương hiệu, hướng dẫn kỹ thuật và các quà tặng kèm theo
+                                    (nếu có) v.v… phải còn đầy đủ và nguyên vẹn
+                                </li>
+                                <li style="border: 0px; margin: 0px; padding: 0px; list-style: none;">
+                                    + Không có dữ liệu trong sản phẩm có thiết bị lưu trữ.
+                                </li>
+                                <li style="border: 0px; margin: 0px; padding: 0px; list-style: none;">
+                                    + Không bị dơ bẩn, trầy xước, bể vỡ, hư hỏng, có mùi lạ hoặc có dấu hiệu đã qua giặt
+                                    tẩy hoặc qua sử dụng.
+                                </li>
+                            </ul>
+                            <p style="border: 0px; margin: 0px 0px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                            </p>
+                            <p style="border: 0px; margin: 0px 0px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">2. Danh mục hạn chế (sản phẩm
+                                    không áp dụng đổi trả):</strong></p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                + Phụ kiện thời trang, đồng hồ, nữ trang, đồ lót, đồ bơi, áo phao bơi, mỹ phẩm, nước
+                                hoa, sản phẩm quà tặng kèm, thực phẩm, đồ uống.</p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; font-family: Arial, Tahoma, Verdana; line-height: 20px; font-weight: bold; color: rgb(255, 0, 0);">
+                                + Giày dép thời trang nữ.</p>
+                            <p style="border: 0px; margin: 0px 0px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">3. Hàng giao bị bể vỡ, sai sản
+                                    phẩm hoặc bị thiếu, lỗi kỹ thuật</strong></p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">Đối với TPHCM</strong> - RUNECOM
+                                khuyến khích quý khách hàng phải kiểm tra tình trạng bên ngoài của thùng hàng và sản
+                                phẩm trước khi thanh toán để đảm bảo rằng hàng hóa được giao đúng chủng loại, số lượng,
+                                màu sắc theo đơn đặt hàng và tình trạng bên ngoài không bị tác động (bể vỡ/ trày xước).
+                                Nếu gặp trường hợp này, Quý khách vui lòng từ chối nhận hàng và/hoặc báo ngay cho bộ
+                                phận hỗ trợ khách hàng để chúng tôi có phương án xử lí kịp thời.<br/>
+                                <br/>
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">Đối với tỉnh thành khác</strong>
+                                - Do đặt thù của Bưu Điện không cho phép khác hàng mở sản phẩm ra xem trước khi thanh
+                                toán, vì vậy khuyến khích quý khách hàng phải kiểm tra biên lai được dán bên ngoài bao
+                                bì gói hàng trước khi thanh toán để đảm bảo rằng hàng hóa được giao đúng chủng loại, số
+                                lượng, màu sắc theo đơn đặt hàng. Nếu phát hiện sai sót, vui lòng báo ngay cho bộ phận
+                                hỗ trợ khách hàng để chúng tôi có phương án xử lí kịp thời (0909.616.700). <br/>
+                                <br/>
+                                Trong trường hợp khách hàng đã thanh toán, nhận hàng và sau đó phát hiện hàng hóa bị bể
+                                vỡ, sai nội dung hoặc thiếu hàng, xin vui lòng chụp ảnh sản phẩm gửi về hộp thư của
+                                chúng tôi để được chúng tôi hỗ trợ các bước tiếp theo như đổi/trả hàng hoặc gửi sản phẩm
+                                còn thiếu đến quý khách…</p>
+                            <p style="border: 0px; margin: 0px 0px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">4. Phí đổi trả hàng</strong></p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">+ Đổi hàng:</strong> RUNECOM hỗ
+                                trợ khách hàng đổi miễn phí sang bất kỳ sản phẩm còn bày bán trên gian hàng với giá trị
+                                sản phẩm tương đương hoặc lớn hơn (quý khách chỉ trả phí vận chuyển đơn hàng, trong
+                                trường hợp lỗi là do sai đơn hàng hoặc sản phẩm bể vỡ, mydeal.vn sẽ miễn phí vận chuyển
+                                đơn hàng đổi cho quý khách), nếu đổi sang sản phẩm ít tiền hơn, mydeal.vn không hỗ trợ
+                                hoàn tiền thừa.</p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                <strong style="border: 0px; margin: 0px; padding: 0px;">+ Trả hàng:</strong> RUNECOM
+                                tính phí 25% toàn bộ giá trị sản phẩm (không bao gồm phí vận chuyển) cho đơn hàng trả
+                                hàng, nghĩa là khách hàng được hoàn tiền 75% giá trị sản phẩm thông qua tài khoản ngân
+                                hàng.</p>
+                            <p style="border: 0px; margin: 0px 0px 20px 20px; padding: 0px; font-size: 14px; color: rgb(51, 51, 51); font-family: Arial, Tahoma, Verdana; line-height: 20px;">
+                                Mọi chi tiết hoặc thắc mắc quý khách vui lòng liên hệ với chúng tôi qua số điện thoại hỗ
+                                trợ hoặc gởi mail đến hộp thư support@RUNECOM.vn. Xin chân thành cảm ơn.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

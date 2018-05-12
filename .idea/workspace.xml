@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a574b3b6-31ed-42f0-b930-b0466ec2fcc5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0001_initial.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0002_employee.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0003_sale.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0004_product.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0005_comment_order.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0006_auto_20180405_2236.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0007_auto_20180405_2332.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0008_auto_20180405_2334.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0009_auto_20180405_2335.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0010_auto_20180405_2346.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0011_auto_20180405_2348.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0012_auto_20180405_2356.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0013_auto_20180405_2358.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0014_auto_20180405_2359.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0015_auto_20180408_2050.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0016_auto_20180408_2114.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0017_customerprofileinfo_birth_day.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0018_auto_20180408_2354.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0019_auto_20180409_1023.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0020_auto_20180418_1052.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0021_product_product_code.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0022_sale_name.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0023_auto_20180418_1113.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0024_auto_20180418_1331.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0025_product_description.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0026_auto_20180419_1409.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0027_auto_20180419_1632.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0028_auto_20180419_1636.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0029_auto_20180419_1638.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0030_auto_20180419_1951.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0031_auto_20180419_1951.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0032_auto_20180419_1957.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0033_auto_20180419_2000.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0034_auto_20180419_2002.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0035_auto_20180419_2004.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0036_auto_20180419_2006.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0037_auto_20180419_2010.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0038_auto_20180419_2012.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0039_auto_20180419_2030.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0040_auto_20180419_2037.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0041_auto_20180419_2041.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0042_auto_20180419_2043.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0043_auto_20180419_2044.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0044_auto_20180422_1333.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0045_auto_20180422_1343.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0046_auto_20180422_1345.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0047_auto_20180422_1844.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/models.py" afterPath="$PROJECT_DIR$/mobile_sale_app/models.py" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/urls.py" afterPath="$PROJECT_DIR$/mobile_sale_app/urls.py" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/views.py" afterPath="$PROJECT_DIR$/mobile_sale_app/views.py" />
+      <change beforePath="$PROJECT_DIR$/static/mobile_sale_app/css/style.css" afterPath="$PROJECT_DIR$/static/mobile_sale_app/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/static/mobile_sale_app/js/script.js" afterPath="$PROJECT_DIR$/static/mobile_sale_app/js/script.js" />
+      <change beforePath="$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html" afterPath="$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_sale_app/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="159" column="31" lean-forward="false" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="421" column="55" lean-forward="false" selection-start-line="421" selection-start-column="55" selection-end-line="421" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="239" column="68" lean-forward="false" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#1003#1021#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_sale_app/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="1805" column="33" lean-forward="false" selection-start-line="1805" selection-start-column="33" selection-end-line="1805" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="277" column="55" lean-forward="false" selection-start-line="277" selection-start-column="49" selection-end-line="277" selection-end-column="55" />
+              <folding>
+                <marker date="1525236410306" expanded="false" signature="10964:10971" ph="×" />
+                <marker date="1525236410306" expanded="false" signature="12977:12993" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile_sale_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3179">
+              <caret line="187" column="29" lean-forward="false" selection-start-line="187" selection-start-column="29" selection-end-line="187" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Sản phẩm</find>
+      <find>print</find>
+      <find>window.shop</find>
+      <find>giới t</find>
+      <find>shop</find>
+      <find>title</find>
+      <find>contact-block</find>
+      <find>Trang</find>
+      <find>Kiểm</find>
+      <find>Tiếp</find>
+      <find>Liên hệ</find>
+      <find>tuyển</find>
+      <find>col-</find>
+      <find>Siêu Mua</find>
+      <find>RUNECOM</find>
+      <find>đổi trả</find>
+      <find>sky</find>
+      <find>exchange_regulations</find>
+      <find>Về tea</find>
+      <find>Custom</find>
+      <find>jque</find>
+      <find>console.log(</find>
+      <find>brea</find>
+      <find>payment</find>
+      <find>COMMENT</find>
+      <find>a</find>
+      <find>uuid</find>
+      <find>product_de</find>
+      <find>endblock</find>
+      <find>block</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>products</replace>
+      <replace>intcomma</replace>
+      <replace>NovaShop</replace>
+      <replace>delivery_regulations</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/populate_data.py" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/footer.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/header.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/left_account_bar.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/signup.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/login.html" />
+        <option value="$PROJECT_DIR$/static/mobile_sale_app/css/smoothproduct.css" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/templatetags/filter_extras.py" />
+        <option value="$PROJECT_DIR$/MobileSaleWeb/urls.py" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/admin_login.html" />
+        <option value="$PROJECT_DIR$/MobileSaleWeb/settings.py" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/order_manage.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/change_password.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/intro.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/customer_order.html" />
+        <option value="$PROJECT_DIR$/templates/warranty_rule.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/warranty_rule.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/exchange_regulations.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/delivery_regulations.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/payment_regulations.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/contact.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/about_team.html" />
+        <option value="$PROJECT_DIR$/static/mobile_sale_app/js/momentjs.js" />
+        <option value="$PROJECT_DIR$/static/mobile_sale_app/js/validatejs.js" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/change_user_info.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/base.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/home.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/payment.html" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/forms.py" />
+        <option value="$PROJECT_DIR$/static/mobile_sale_app/js/slide.js" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/admin.py" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/models.py" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/urls.py" />
+        <option value="$PROJECT_DIR$/static/mobile_sale_app/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html" />
+        <option value="$PROJECT_DIR$/static/mobile_sale_app/js/script.js" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MobileSaleWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MobileSaleWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile_sale_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/learning_templates" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TTCNPM\ttcnpm-172-06\final\trunk\Group06-MobileSaleWeb\MobileSaleWeb\static\mobile_sale_app\images" />
+      <recent name="D:\TTCNPM\ttcnpm-172-06\final\trunk\Group06-MobileSaleWeb\MobileSaleWeb\static\mobile_sale_app" />
+      <recent name="D:\TTCNPM\ttcnpm-172-06\final\trunk\Group06-MobileSaleWeb\MobileSaleWeb\static\mobile_sale_app\css" />
+      <recent name="D:\TTCNPM\ttcnpm-172-06\final\trunk\Group06-MobileSaleWeb\MobileSaleWeb\templates\mobile_sale_app" />
+      <recent name="D:\TTCNPM\ttcnpm-172-06\final\trunk\Group06-MobileSaleWeb\MobileSaleWeb\static\mobile_sale_app\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TTCNPM\ttcnpm-172-06\final\trunk\Group06-MobileSaleWeb\MobileSaleWeb\templates\mobile_sale_app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MobileSaleWeb" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="MobileSaleWeb.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MobileSaleWeb" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a574b3b6-31ed-42f0-b930-b0466ec2fcc5" name="Default" comment="" />
+      <created>1522934066362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522934066362</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of https://gitlab.com/thuanle/ttcnpm-172-06&#10;&#10;# Conflicts:&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/settings.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/urls.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/wsgi.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/settings.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/urls.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/db.sqlite3&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/admin.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/models.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/urls.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/views.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0002_employee.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0003_sale.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0004_product.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0005_comment_order.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0006_auto_20180405_2236.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0007_auto_20180405_2332.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0008_auto_20180405_2334.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0009_auto_20180405_2335.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0010_auto_20180405_2346.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0011_auto_20180405_2348.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0012_auto_20180405_2356.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0013_auto_20180405_2358.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0014_auto_20180405_2359.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/urls.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/views.py">
+      <created>1525195202159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525195202159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25466892" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25466892" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22844176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25466892" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25466892" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge branch 'master' of https://gitlab.com/thuanle/ttcnpm-172-06&#10;&#10;# Conflicts:&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/settings.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/urls.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/wsgi.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/settings.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/urls.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/db.sqlite3&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/admin.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/models.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/urls.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/views.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0002_employee.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0003_sale.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0004_product.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0005_comment_order.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0006_auto_20180405_2236.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0007_auto_20180405_2332.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0008_auto_20180405_2334.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0009_auto_20180405_2335.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0010_auto_20180405_2346.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0011_auto_20180405_2348.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0012_auto_20180405_2356.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0013_auto_20180405_2358.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0014_auto_20180405_2359.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/urls.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/views.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://gitlab.com/thuanle/ttcnpm-172-06&#10;&#10;# Conflicts:&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/settings.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/urls.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/__pycache__/wsgi.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/settings.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/MobileSaleWeb/urls.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/db.sqlite3&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/admin.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/models.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/urls.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/__pycache__/views.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0001_initial.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0002_employee.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0003_sale.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0004_product.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0005_comment_order.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0006_auto_20180405_2236.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0007_auto_20180405_2332.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0008_auto_20180405_2334.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0009_auto_20180405_2335.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0010_auto_20180405_2346.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0011_auto_20180405_2348.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0012_auto_20180405_2356.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0013_auto_20180405_2358.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/0014_auto_20180405_2359.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/migrations/__pycache__/__init__.cpython-36.pyc&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/urls.py&#10;#&#9;final/trunk/Group06-MobileSaleWeb/MobileSaleWeb/mobile_sale_app/views.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/header.html" />
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/bootstrap.min.css.map" />
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/fontawesome-all.css" />
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/font-awesome.min.css" />
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/font-awesome-4.7.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/images/cart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/header.html" />
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/footer.html" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/core/paginator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-389">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/left_account_bar.html" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/smoothproduct.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="201" column="0" lean-forward="true" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/templatetags/filter_extras.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="94" lean-forward="true" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/admin_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileSaleWeb/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="138" column="50" lean-forward="false" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/order_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="151" column="98" lean-forward="false" selection-start-line="151" selection-start-column="98" selection-end-line="151" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MobileSaleWeb/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/change_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="63" column="175" lean-forward="false" selection-start-line="63" selection-start-column="175" selection-end-line="63" selection-end-column="175" />
+          <folding>
+            <element signature="e#1468#1474#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/customer_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="102" column="102" lean-forward="false" selection-start-line="102" selection-start-column="102" selection-end-line="102" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/warranty_rule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="e#979#1132#0#HTML" expanded="false" />
+            <element signature="e#1174#1221#0#HTML" expanded="false" />
+            <element signature="e#1285#1438#0#HTML" expanded="false" />
+            <element signature="e#1650#1803#0#HTML" expanded="false" />
+            <element signature="e#1845#1892#0#HTML" expanded="false" />
+            <element signature="e#1988#2141#0#HTML" expanded="false" />
+            <element signature="e#2367#2520#0#HTML" expanded="false" />
+            <element signature="e#2562#2609#0#HTML" expanded="false" />
+            <element signature="e#2704#2857#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/exchange_regulations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#967#1120#0#HTML" expanded="false" />
+            <element signature="e#2166#2319#0#HTML" expanded="false" />
+            <element signature="e#2361#2408#0#HTML" expanded="false" />
+            <element signature="e#2515#2673#0#HTML" expanded="false" />
+            <element signature="e#3142#3342#0#HTML" expanded="false" />
+            <element signature="e#3380#3445#0#HTML" expanded="false" />
+            <element signature="e#3607#3672#0#HTML" expanded="false" />
+            <element signature="e#3826#3891#0#HTML" expanded="false" />
+            <element signature="e#4167#4232#0#HTML" expanded="false" />
+            <element signature="e#4399#4464#0#HTML" expanded="false" />
+            <element signature="e#4748#4901#0#HTML" expanded="false" />
+            <element signature="e#4967#5120#0#HTML" expanded="false" />
+            <element signature="e#5162#5209#0#HTML" expanded="false" />
+            <element signature="e#5344#5502#0#HTML" expanded="false" />
+            <element signature="e#5736#5912#0#HTML" expanded="false" />
+            <element signature="e#6007#6160#0#HTML" expanded="false" />
+            <element signature="e#6202#6249#0#HTML" expanded="false" />
+            <element signature="e#6394#6552#0#HTML" expanded="false" />
+            <element signature="e#6594#6641#0#HTML" expanded="false" />
+            <element signature="e#7329#7376#0#HTML" expanded="false" />
+            <element signature="e#8486#8639#0#HTML" expanded="false" />
+            <element signature="e#8681#8728#0#HTML" expanded="false" />
+            <element signature="e#8793#8951#0#HTML" expanded="false" />
+            <element signature="e#8993#9040#0#HTML" expanded="false" />
+            <element signature="e#9631#9789#0#HTML" expanded="false" />
+            <element signature="e#9831#9878#0#HTML" expanded="false" />
+            <element signature="e#10218#10376#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/delivery_regulations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+          <folding>
+            <element signature="e#981#1120#0#HTML" expanded="false" />
+            <element signature="e#1162#1215#0#HTML" expanded="false" />
+            <element signature="e#1272#1406#0#HTML" expanded="false" />
+            <element signature="e#1446#1550#0#HTML" expanded="false" />
+            <element signature="e#2207#2341#0#HTML" expanded="false" />
+            <element signature="e#2379#2413#0#HTML" expanded="false" />
+            <element signature="e#2905#3039#0#HTML" expanded="false" />
+            <element signature="e#3077#3111#0#HTML" expanded="false" />
+            <element signature="e#3359#3463#0#HTML" expanded="false" />
+            <element signature="e#3797#3901#0#HTML" expanded="false" />
+            <element signature="e#4164#4268#0#HTML" expanded="false" />
+            <element signature="e#4643#4777#0#HTML" expanded="false" />
+            <element signature="e#4815#4849#0#HTML" expanded="false" />
+            <element signature="e#5364#5398#0#HTML" expanded="false" />
+            <element signature="e#5574#5608#0#HTML" expanded="false" />
+            <element signature="e#5742#5876#0#HTML" expanded="false" />
+            <element signature="e#5914#5948#0#HTML" expanded="false" />
+            <element signature="e#5989#6093#0#HTML" expanded="false" />
+            <element signature="e#6410#6544#0#HTML" expanded="false" />
+            <element signature="e#6582#6616#0#HTML" expanded="false" />
+            <element signature="e#6778#6882#0#HTML" expanded="false" />
+            <element signature="e#7061#7195#0#HTML" expanded="false" />
+            <element signature="e#7233#7267#0#HTML" expanded="false" />
+            <element signature="e#7526#7630#0#HTML" expanded="false" />
+            <element signature="e#7820#7954#0#HTML" expanded="false" />
+            <element signature="e#7992#8026#0#HTML" expanded="false" />
+            <element signature="e#8069#8103#0#HTML" expanded="false" />
+            <element signature="e#8159#8293#0#HTML" expanded="false" />
+            <element signature="e#8565#8699#0#HTML" expanded="false" />
+            <element signature="e#8804#8908#0#HTML" expanded="false" />
+            <element signature="e#9174#9308#0#HTML" expanded="false" />
+            <element signature="e#9607#9741#0#HTML" expanded="false" />
+            <element signature="e#9783#9817#0#HTML" expanded="false" />
+            <element signature="e#9937#10041#0#HTML" expanded="false" />
+            <element signature="e#10126#10260#0#HTML" expanded="false" />
+            <element signature="e#10302#10336#0#HTML" expanded="false" />
+            <element signature="e#10435#10569#0#HTML" expanded="false" />
+            <element signature="e#10611#10645#0#HTML" expanded="false" />
+            <element signature="e#10712#10816#0#HTML" expanded="false" />
+            <element signature="e#10873#10907#0#HTML" expanded="false" />
+            <element signature="e#10950#10984#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/momentjs.js" />
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/validatejs.js" />
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/about_team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/payment_regulations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="20" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/change_user_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="34" column="62" lean-forward="false" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/slide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="189" column="34" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DjangoModelDependency/#MobileSaleWeb">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#MobileSaleWeb</OriginalElement>
+          <nodes>
+            <node x="" y="">mobile_sale_app.models.Product</node>
+            <node x="" y="">django.contrib.auth.models.User</node>
+            <node x="" y="">django.contrib.auth.models.Permission</node>
+            <node x="" y="">mobile_sale_app.models.Sale</node>
+            <node x="" y="">mobile_sale_app.models.CustomerProfileInfo</node>
+            <node x="" y="">mobile_sale_app.models.Order</node>
+            <node x="" y="">mobile_sale_app.models.Comment</node>
+            <node x="" y="">django.contrib.auth.models.Group</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.9162162162162162" x="290.0" y="235.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="421" column="55" lean-forward="false" selection-start-line="421" selection-start-column="55" selection-end-line="421" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="1805" column="33" lean-forward="false" selection-start-line="1805" selection-start-column="33" selection-end-line="1805" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="239" column="68" lean-forward="false" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#1003#1021#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="159" column="31" lean-forward="false" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="277" column="55" lean-forward="false" selection-start-line="277" selection-start-column="49" selection-end-line="277" selection-end-column="55" />
+          <folding>
+            <marker date="1525236410306" expanded="false" signature="10964:10971" ph="×" />
+            <marker date="1525236410306" expanded="false" signature="12977:12993" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3179">
+          <caret line="187" column="29" lean-forward="false" selection-start-line="187" selection-start-column="29" selection-end-line="187" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

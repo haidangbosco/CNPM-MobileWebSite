@@ -1,0 +1,51 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% block body %}
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb clearfix">
+                        <ul>
+                            <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home">
+                                <a title="Đến trang chủ" href="{% url 'mobile_sale_app:index' %}    " itemprop="url"><span itemprop="title">Trang chủ</span></a>
+                            </li>
+                            <li class="icon-li"><strong>Về team</strong></li>
+                        </ul>
+                    </div>
+                    <div class="page-option">
+                        <h1 class="title">
+                            <span>Các thành viên trong nhóm</span>
+                        </h1>
+                        <div class="page-option-block">
+                            <table class="table table-condensed table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Họ và tên</th>
+                                        <th>MSSV</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nguyễn Thanh Nhân</td>
+                                        <td>1512266</td>
+                                        <td>ntnhan2266@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Nguyễn Ngọc Hải Đăng</td>
+                                        <td>1510739</td>
+                                        <td>dangnguyenngochai.nnhd@gmail.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

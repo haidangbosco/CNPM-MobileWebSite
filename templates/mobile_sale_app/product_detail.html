@@ -1,0 +1,369 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block body %}
+    <div class="wrapper">
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                    <div class="breadcrumb clearfix">
+                            <ul>
+                                <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home">
+                                    <a title="Đến trang chủ" href="/" itemprop="url"><span
+                                            itemprop="title">Trang chủ</span></a>
+                                </li>
+                                <li class="productname icon-li"><strong>{{ product.name }}</strong></li>
+                            </ul>
+                        </div>
+                        <div class="product-detail clearfix relative">
+                            <span us-spinner="{radius:5, width:3, length: 3}"></span>
+                            <!--Begin-->
+                            <div class="product-block clearfix">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 product-image clearfix">
+                                        <div class="sp-loading hidden">
+                                            <img src="{% static 'mobile_sale_app/images/sp-loading.gif' %}" alt=""><br>
+                                            LOADING IMAGES
+                                        </div>
+                                        <div class="sp-wrap sp-non-touch" style="display: inline-block;">
+                                            <div class="sp-large">
+                                                <a href='#' class='sp-current-big'>
+                                                    <img src="../media/{{ product.img }}"
+                                                         alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="sp-wrap">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 clearfix">
+                                        <h2>{{ product.name }}</h2>
+                                        <div class="price">
+                                            {#                                            // Promotion#}
+                                            <div>
+                                                {% if product.sale.type %}
+                                                    <span class="price-new">{{ product.price_sale|intcomma }}đ</span>
+                                                    <span class="price-old">{{ product.price|intcomma }}đ</span>
+                                                {% else %}
+                                                    <span class="price-new">{{ product.price|intcomma }}đ</span>
+                                                {% endif %}
+                                            </div>
+                                            <span class="product-code">Mã sản phẩm: {{ product.product_code }}</span>
+                                        </div>
+                                        <div class="price hidden">
+                                            <span class="product-code">Không có hàng</span>
+
+                                        </div>
+                                        <div class="des summary">
+                                            <div>
+                                                <strong>{{ product.description }}</strong>
+                                            </div>
+                                        </div>
+{#                                        <div class="quantity clearfix">#}
+{#                                            <label for="number">Số lượng</label>#}
+{#                                            <div class="quantity-input">#}
+{#                                                <input class="form-control" type="number" value="1" class="text"#}
+{#                                                       id="number"/>#}
+{#                                            </div>#}
+{#                                        </div>#}
+                                        <div class="action">
+{#                                            <a href="javascript:" class="btn-add-cart">#}
+{#                                                <i class="fa fa-shopping-cart"></i> Thêm giỏ hàng#}
+{#                                            </a>#}
+                                            <a href="../payment/{{ product.id }}/" class="btn-payment"><i class="fa fa-check"></i>
+                                                Mua ngay</a>
+                                        </div>
+                                        {#                                        <div class="action">#}
+                                        {#                                            <button class="btn btn-primary" disabled="disabled"><i#}
+                                        {#                                                    class="fa fa-shopping-cart"></i> Hết hàng#}
+                                        {#                                            </button>#}
+                                        {#                                        </div>#}
+                                        <div class="call">
+                                            <p class="title">Để lại số điện thoại, chúng tôi sẽ tư vấn ngay sau từ 5 ›
+                                                10 phút</p>
+                                            <div class="input">
+                                                <div class="input-group">
+                                                    <input class="form-control"
+                                                           placeholder="Nhập số điện thoại..." type="text">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><i
+                                                                class="fa fa-phone"></i> Gọi lại cho tôi</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-tabs">
+                                <ul class="nav nav-tabs">
+                                    <li role="presentation">
+                                        <a data-toggle="tab" href="#tab">Thông số kỹ thuật</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="tab">
+                                        <div>
+                                            <table cellpadding="0" cellspacing="0" class="product_info">
+                                                <tbody>
+                                                <tr>
+                                                    <td class="grey-column">RAM</td>
+                                                    <td class="white-column">{{ product.memory }}GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Độ phân giải camera</td>
+                                                    <td class="white-column">{{ product.camera_resolution }}MP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Kích thước màn hình</td>
+                                                    <td class="white-column">{{ product.screen_size }}inch</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Khối lượng</td>
+                                                    <td class="white-column">{{ product.weigth }}gram</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Dung lượng pin</td>
+                                                    <td class="white-column">{{ product.battery }}mAh</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Hệ điều hành</td>
+                                                    <td class="white-column">{{ product.os }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Nhà sản xuất</td>
+                                                    <td class="white-column">{{ product.manufacturer }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="grey-column">Màu sắc</td>
+                                                    <td class="white-column">{{ product.color }}</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End-->
+                            {#                            <div class="modal fade" id="modalMyCart" role="dialog"#}
+                            {#                                 aria-labelledby="modalMyCartLabel" aria-hidden="true">#}
+                            {#                                <div class="modal-dialog  modal-lg">#}
+                            {#                                    <div class="modal-content">#}
+                            {#                                        <div class="modal-header">#}
+                            {#                                            <button type="button" class="close" aria-hidden="true">#}
+                            {#                                                &times;#}
+                            {#                                            </button>#}
+                            {#                                            <h4 class="modal-title" id="modalMyCartLabel">Bạn#}
+                            {#                                                có {{ OrderDetails.length }} sản phẩm trong giỏ hàng.</h4>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="modal-body">#}
+                            {#                                            <table class="table" style="width:100%">#}
+                            {#                                                <thead>#}
+                            {#                                                <tr>#}
+                            {#                                                    <th></th>#}
+                            {#                                                    <th>Tên sản phẩm</th>#}
+                            {#                                                    <th>Số lượng</th>#}
+                            {#                                                    <th>Giá tiền</th>#}
+                            {#                                                    <th></th>#}
+                            {#                                                </tr>#}
+                            {#                                                </thead>#}
+                            {#                                                <tbody>#}
+                            {#                                                <tr class="line-item">#}
+                            {#                                                    <td class="item-image">#}
+                            {#                                                        <img class="img-responsive"#}
+                            {#                                                             style="max-height:60px;"/>#}
+                            {#                                                    </td>#}
+                            {#                                                    <td class="item-title">#}
+                            {#                                                        <a href="/san-pham/{{ item.ProductCode }}.html">#}
+                            {#                                                            {{ item.ProductName }}<br>#}
+                            {#                                                            <span>{{ item.VariantName }}</span>#}
+                            {#                                                        </a>#}
+                            {#                                                    </td>#}
+                            {#                                                    <td class="item-quantity">#}
+                            {#                                                        <input type="number" class="text"/>#}
+                            {#                                                    </td>#}
+                            {#                                                    <td class="item-price">₫</td>#}
+                            {#                                                    <td class="item-delete"><a href="javascript:void(0)">Xóa</a></td>#}
+                            {#                                                </tr>#}
+                            {#                                                </tbody>#}
+                            {#                                            </table>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="modal-footer">#}
+                            {#                                            <div class="row">#}
+                            {#                                                <div class="col-sm-12">#}
+                            {#                                                    <div class="total-price-modal">#}
+                            {#                                                        Tổng cộng : <span#}
+                            {#                                                            class="item-total">₫</span>#}
+                            {#                                                    </div>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                            <div class="row margin-top-10">#}
+                            {#                                                <div class="col-lg-6">#}
+                            {#                                                    <div class="comeback text-left">#}
+                            {#                                                        <a href="/san-pham.html">#}
+                            {#                                                            <i class="fa fa-chevron-circle-left "></i> Tiếp tục mua hàng#}
+                            {#                                                        </a>#}
+                            {#                                                    </div>#}
+                            {#                                                </div>#}
+                            {#                                                <div class="col-lg-6 text-right">#}
+                            {#                                                    <div class="buttons btn-modal-cart">#}
+                            {#                                                        <a class="btn btn-default" href="/thanh-toan.html">#}
+                            {#                                                            Đặt hàng#}
+                            {#                                                        </a>#}
+                            {#                                                    </div>#}
+                            {#                                                </div>#}
+                            {#                                            </div>#}
+                            {#                                        </div>#}
+                            {#                                    </div>#}
+                            {#                                </div>#}
+                            {#                            </div>#}
+                            {#                            <div class="modal fade" id="modalCallMe" role="dialog"#}
+                            {#                                 aria-labelledby="modalCallMeLabel" aria-hidden="true">#}
+                            {#                                <div class="modal-dialog">#}
+                            {#                                    <div class="modal-content">#}
+                            {#                                        <div class="modal-body">#}
+                            {#                                            <h2>Cám ơn Qúy Khách đã liên hệ đặt hàng</h2>#}
+                            {#                                            <p>Shop sẽ gọi lại để tư vấn cho Quý khách hàng trong thời gian sớm nhất</p>#}
+                            {#                                        </div>#}
+                            {#                                        <div class="modal-footer">#}
+                            {#                                            <button type="button" class="btn btn-primary" data-dismiss="modal">#}
+                            {#                                                OK#}
+                            {#                                            </button>#}
+                            {#                                        </div>#}
+                            {#                                    </div>#}
+                            {#                                </div>#}
+                            {#                            </div>#}
+                            {#                        </div>#}
+                        </div>
+                        <div class="content-review">
+                            <h1>Bình luận về sản phẩm<span class="number-comment">   ({{ size}})</span></h1>
+                            <br>
+                            {% for comment in  comments %}
+                                <div class="comment-item">
+                                    <div class="cmt-head">
+                                        <span class="user-name">{{ comment.customer.name }}</span>
+                                        <label class="rating">
+                                            •
+                                            {{ comment.rate }}
+                                            <i class="fa fa-star"></i>
+                                        </label>
+                                    </div>
+                                    <div class="cmt-content">
+                                        <p><i>{{ comment.content }}</i></p>
+                                    </div>
+                                    <div class="cmt-time">
+                                        <span> • </span>
+                                        <span class="time">{{ comment.time }}</span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            <div class="comment-tab">
+                                <form action="{% url 'mobile_sale_app:add_comment' %}" method="post">
+                                    {% csrf_token %}
+                                    <div class="ips">
+                                        <span class="title-rate">Chọn đánh giá của bạn</span>
+                                        <span class="lStar">
+                                            <i class="fa fa-star rate ls" id="s1"></i>
+                                            <i class="fa fa-star rate ls" id="s2"></i>
+                                            <i class="fa fa-star rate ls" id="s3"></i>
+                                            <i class="fa fa-star rate ls" id="s4"></i>
+                                            <i class="fa fa-star unrate ls" id="s5"></i>
+                                        </span>
+                                    </div>
+                                    <div class="form-group">
+                                        {{ comment_form.content }}
+                                    </div>
+                                    <input name="product_id" type="hidden" value="{{ product.id }}">
+                                    <input name="rating" type="hidden" id="id_rating">
+                                    <input type="submit" value="Gửi" class="btn btn-default">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <!--Begin-->
+                        <div class="box-sale-policy">
+                            <h3><span>Chính sách bán hàng</span></h3>
+                            <div class="sale-policy-block">
+                                <ul>
+                                    <li>Giao hàng TOÀN QUỐC</li>
+                                    <li>Thanh toán khi nhận hàng</li>
+                                    <li>Đổi trả trong <span>15 ngày</span></li>
+                                    <li>Hoàn ngay tiền mặt</li>
+                                    <li>Chất lượng đảm bảo</li>
+                                    <li>Miễn phí vận chuyển:<span>Đơn hàng từ 3 món trở lên</span></li>
+                                </ul>
+                            </div>
+                            <div class="buy-guide">
+                                <h3>Hướng Dẫn Mua Hàng</h3>
+                                <ul>
+                                    <li>
+                                        Mua hàng trực tiếp tại website
+                                        <b>www.ambitionshop.vn</b>
+                                    </li>
+                                    <li>
+                                        Gọi điện thoại <strong>
+                                        0985959770
+                                    </strong> để mua hàng
+                                    </li>
+                                    <li>
+                                        Mua tại Trung tâm CSKH:<br/>
+                                        <strong>Kí túc xá khu A - DHQG</strong>
+                                        <a href="#" rel="nofollow" target="_blank">Xem Bản Đồ</a>
+                                    </li>
+                                    <li>
+                                        Mua sỉ/buôn xin gọi <strong>
+                                        0985959770
+                                    </strong> để được
+                                        hỗ trợ.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End-->
+                        <div class="box-product">
+                            <h3>
+                                <span>
+                                    Sản phẩm khác
+                                </span>
+                            </h3>
+                            <div class="box-product-block">
+                                {% for item in other_products %}
+                                    <div class="item">
+                                        <div class="image">
+                                            <a href="{% url 'mobile_sale_app:product_detail' pk=item.pk %}">
+                                            <img class="img-responsive lazy-img"
+                                                 src="../media/{{ item.img }}"
+                                                 alt="{{ item.name }}"
+                                                 title="{{ item.name }}"/>
+                                            </a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="{% url 'mobile_sale_app:product_detail' pk=item.pk %}" title="{{ item.name }}">
+                                                {{ item.name }}
+                                            </a>
+                                        </div>
+                                        <div class="price">
+                                            {% if item.sale.type %}
+                                                <span class="price-new">{{ item.price_sale|intcomma }} ₫</span>
+                                                <span class="price-old">{{ item.price|intcomma }} ₫</span>
+                                            {% else %}
+                                                <span class="price-new">{{ item.price|intcomma }} ₫</span>
+                                            {% endif %}
+                                        </div>
+                                        <div class="action text-center">
+                                            <a class="btn-add-cart" href="{% url 'mobile_sale_app:payment' pd_id=product.id %}">Mua</a>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

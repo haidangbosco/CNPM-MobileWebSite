@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ambition Shop</title>
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/css/smoothproduct.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/css/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'mobile_sale_app/js/bootstrap.min.js' %}"></script>
+
+
+</head>
+<body>
+<div class="wrapper page-home">
+    <div class="header">
+        <section class="top-link">
+            <div class="container">
+                <div class="">
+                    <ul class="about pull-left hidden-xs">
+                        <li><a href="{% url 'mobile_sale_app:about_team' %}">VỀ TEAM</a></li>
+                        <li><a href="https://www.djangoproject.com/">KIẾN THỨC</a></li>
+                    </ul>
+                    <div class="about-mobile dropdown pull-left visible-xs">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                            <i class="fa fa-list"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">VỀ TEAM</a></li>
+                            <li><a href="#">KIẾN THỨC</a></li>
+                        </ul>
+                    </div>
+                    <ul class="contact pull-right text-right dropdown-menu-right">
+                        <li><a href="#"><i class="fa fa-phone"></i> Hotline:0985959770</a></li>
+                        <li class="hidden-sm hidden-xs"><a href="{% url 'mobile_sale_app:contact_us' %}"><i class="fa fa-key"></i> LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="header-content clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 col-md-3 col-xs-12">
+                        <!-- Header Logo -->
+                        <a class="logo" href="{% url 'mobile_sale_app:index' %}"><img alt=""
+                                                                                      src="{% static 'mobile_sale_app/images/logo.png' %}"></a>
+                        <!-- End Header Logo -->
+                    </div>
+                    <div class="col-lg-5 col-sm-12 col-md-5 col-xs-12">
+                        <!-- Search-col -->
+                        <div class="box-search">
+                            <div class="box-search">
+                                <div class="box-input">
+                                    <form action="{% url 'mobile_sale_app:search_product' %}" method="get">
+                                        {% csrf_token %}
+                                        <div class="input-group-search" style="">
+                                            <input type="text" name="keyword" class="index_input_search" id="txtsearch"
+                                                   placeholder="Tìm kiếm..."/>
+                                        </div>
+                                        <button type="submit" class="btn-search" id="btnsearch">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Search-col -->
+                    </div>
+                    <!-- Top Cart -->
+                    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+                        {% if user.is_authenticated %}
+                            <div class="cart_header">
+                                <a href="{% url 'mobile_sale_app:customer_order' %}" title="Đơn hàng">
+                                    <span class="cart_header_icon"></span>
+                                    <span class="cart-items">0</span>
+                                </a>
+                                <div class="cart_header_top_box">
+                                    <div class="cart_empty">Giỏ hàng của bạn vẫn chưa có sản phẩm nào.</div>
+                                </div>
+                            </div>
+                        {% else %}
+
+                        {% endif %}
+
+                        <div class="user_login">
+                            <div class="dropdown">
+                                {% if user.is_authenticated %}
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                        {{ user.username }}
+                                        <span class="caret"></span>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="{% url 'mobile_sale_app:log_out' %}"><i
+                                                        class="fa fa-sign-out"></i> Đăng xuất</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'mobile_sale_app:change_user_info' %}"><i
+                                                        class="fa fa-user"></i> Tài khoản</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'mobile_sale_app:change_password' %}"><i
+                                                        class="fa fa-lock"></i> Đổi mật khẩu</a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                {% else %}
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                                        Tài khoản
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{% url 'mobile_sale_app:log_in' %}"><i
+                                                class="fa fa-user-circle"></i> Đăng nhập</a></li>
+                                        <li><a href="{% url 'mobile_sale_app:sign_up' %}"><i class="fa fa-plus"></i>
+                                            Đăng ký</a></li>
+                                    </ul>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="order-tracking">
+                            <a href="{% url 'mobile_sale_app:customer_order' %}"><i class="fa fa-pencil-square-o"></i> Kiểm tra đơn
+                                hàng</a>
+                        </div>
+                    </div>
+                    <!-- End Top Cart -->
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                        data-target="#navbar-top">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbar-top">
+                                <ul class='nav navbar-nav'>
+                                    <li class="level0">
+                                        <a class='' href='{% url 'mobile_sale_app:index' %}'><span>Trang chủ</span></a>
+                                    </li>
+                                    <li class="has_child level0">
+                                        <a class='' href='{% url 'mobile_sale_app:intro' %}'><span>Giới thiệu</span></a>
+                                    </li>
+                                    <li class="level0"><a class='' href='{% url 'mobile_sale_app:contact_us' %}'><span>Liên hệ</span></a></li>
+                                </ul class ='nav navbar-nav'>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="divider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% block body %}
+{% endblock %}
+<div class="partner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <!--Begin-->
+                <div class="partner-content">
+                    <h3 class="title"><span>Đối tác</span></h3>
+                    <div class="desc">
+                        <p>
+                            Với những chàng trai yêu tím, sống nội tâm, hay khóc thầm, yêu hòa bình, ghét chiến tranh.
+                            Với chung những tính cách đó đã tạo nên nhóm 6. Nhóm 6 Zero - Six <br>
+                            Sản phẩm của nhóm là một trang web bán điện thoại online với những tính năng cơ bản. Hi vọng
+                            đủ qua môn. </p>
+                    </div>
+                    <div class="partner-block owl-carousel" id="partner-content">
+                        <div class="partner-item wow pulse">
+                            <div class="image">
+                                <a href="#" target="_blank">
+                                    <img src="{% static 'mobile_sale_app/images/nokia_logo.jpeg' %}"
+                                         class="img-responsive"/>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="partner-item wow pulse">
+                            <div class="image">
+                                <a href="#" target="_blank">
+                                    <img src="{% static 'mobile_sale_app/images/LGlogo.png' %}" class="img-responsive"/>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="partner-item wow pulse">
+                            <div class="image">
+                                <a href="#" target="_blank">
+                                    <img src="{% static 'mobile_sale_app/images/samsung.png' %}"
+                                         class="img-responsive"/>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="partner-item wow pulse">
+                            <div class="image">
+                                <a href="#" target="_blank">
+                                    <img src="{% static 'mobile_sale_app/images/Sony_Ericsson85.png' %}"
+                                         class="img-responsive"/>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="partner-item wow pulse">
+                            <div class="image">
+                                <a href="#" target="_blank">
+                                    <img src="{% static 'mobile_sale_app/images/blackberry.png' %}"
+                                         class="img-responsive"/>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="box-nav">
+                        <a class="prev"><i class="icon"></i></a>
+                        <a class="next"><i class="icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+
+    <div class="footer-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                    data-target="#navbar-footer">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="{% static 'mobile_sale_app/images/logo.png' %}"
+                                                                  alt="TTCNPM"/></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbar-footer">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <a href="{% url 'mobile_sale_app:index' %}">
+                                        <span>Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Giới thiệu</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Li&#234;n hệ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <form class="newsletter-content">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Nhập Email đăng ký khuyến mãi" required
+                                   type="email">
+                            <span class="input-group-btn">
+									<button type="submit" class="btn btn-default"><i class="fa fa-send"></i></button>
+								</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3 class="title"><span>THỰC TẬP CÔNG NGHỆ PHẦN MỀM - GROUP 6</span></h3>
+                        <p class="desc"></p>
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    ĐH Bách Khoa TP.HCM
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    0985 959 770
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    team_6@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fa fa-wechat"></i>
+                                    http://www.team6.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3 class="title"><span>Hỗ trợ kh&#225;ch h&#224;ng</span></h3>
+                        <div class="address">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'mobile_sale_app:exchange_regulations' %}">
+                                        <i class="fa fa-caret-right"></i> Quy định đổi trả
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'mobile_sale_app:delivery_regulations' %}">
+                                        <i class="fa fa-caret-right"></i> Quy định giao h&#224;ng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'mobile_sale_app:payment_regulations' %}">
+                                        <i class="fa fa-caret-right"></i> H&#236;nh thức thanh to&#225;n
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'mobile_sale_app:warranty_rule' %}">
+                                        <i class="fa fa-caret-right"></i> Quy định bảo h&#224;nh
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <h3 class="title"><span>Th&#244;ng tin</span></h3>
+                        <div class="address">
+                            <ul>
+                                <li><a href="{% url 'mobile_sale_app:intro' %}"><i class="fa fa-caret-right"></i> Về ch&#250;ng t&#244;i </a></li>
+                                <li>
+                                    <a href="{% url 'mobile_sale_app:contact_us' %}">
+                                        <i class="fa fa-caret-right"></i> Li&#234;n hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box col-md-3 col-sm-12 col-xs-12">
+                    <div class="fanpage">
+                        <div class="fb-page" data-small-header="true" data-href="#" data-tabs="message"
+                             data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box-social">
+                    <div class="social-icon">
+                        <ul>
+                            <li>
+                                <a class="google-plus" href="http://plus.google.com">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="http://twitter.com"><i class="fa fa-twitter "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook" href="http://facebook.com">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="youtube" href="http://youtube.com">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                Copyright &copy; 2018 by Group 6
+            </div>
+        </div>
+    </div>
+</div>
+<a class="back-to-top" href="#" style="display: inline;"><span>Top</span></a>
+<script src="{% static 'mobile_sale_app/js/script.js' %}"></script>
+</body>

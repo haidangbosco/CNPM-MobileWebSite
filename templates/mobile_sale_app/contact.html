@@ -1,0 +1,206 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% block body %}
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="breadcrumb clearfix">
+                        <ul>
+                            <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home">
+                                <a title="Đến trang chủ" href="{% url 'mobile_sale_app:index' %}    " itemprop="url"><span itemprop="title">Trang chủ</span></a>
+                            </li>
+                            <li class="icon-li"><strong>Liên hệ</strong></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="contact-content">
+                        <div class="map clearfix">
+                            <div class="map-canvas" id="map_canvas">
+                            </div>
+                            <div class="map-information">
+                                <ul class="clearfix">
+                                    <li ng-repeat="item in Maps">
+                                        <div>
+                                            <a onclick="moveToMaker({{ item.Id }}); return false;"
+                                               href="javascript:void(0)">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        {#                        <div class="contact-block">#}
+                        {#                            <div class="row">#}
+                        {#                                <div class="col-md-12 col-sm-12 col-xs-12">#}
+                        {#                                    <div class="contact-info">#}
+                        {#                                        <h3 class="title">Gửi thông tin liên hệ</h3>#}
+                        {#                                        <div class="name">NovaShop</div>#}
+                        {#                                        <div class="sologan">Vì cuộc sống tươi đẹp</div>#}
+                        {#                                        <div class="item">#}
+                        {#                                            <i class="fa fa-map-marker"></i>#}
+                        {#                                            <span>Kí túc xá khu A</span>#}
+                        {#                                        </div>#}
+                        {#                                        <div class="item">#}
+                        {#                                            <i class="fa fa-phone"></i>#}
+                        {#                                            <span>0985959770</span>#}
+                        {#                                        </div>#}
+                        {#                                        <div class="item">#}
+                        {#                                            <i class="fa fa-envelope"></i>#}
+                        {#                                            <a href="mailto:team6@gmail.com">team6@gmail.com</a>#}
+                        {#                                        </div>#}
+                        {#                                    </div>#}
+                        {#                                </div>#}
+                        {#                            </div>#}
+                        {#                        </div>#}
+                    </div>
+                    <script type="text/javascript">
+                        var map;
+                        var infowindow;
+                        var marker = new Array();
+                        var old_id = 0;
+                        var infoWindowArray = new Array();
+                        var infowindow_array = new Array();
+
+                        function initialize() {
+                            var defaultLatLng = new google.maps.LatLng(10.773266, 106.6572787);
+
+                            var myOptions = {
+                                zoom: 16,
+                                center: defaultLatLng,
+                                scrollwheel: true,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                            map.setCenter(defaultLatLng);
+
+                            if (Maps.length <= 0) {
+                                var arrLatLng = new google.maps.LatLng(10.773266, 106.6572787);
+                                var myHtml = "<div class='map-description'> <strong>" + firstMap.Name + "</strong><br/>Địa chỉ: <span>" + firstMap.Address + "</span><br/>Điện thoại: <span>" + firstMap.Phone + "</span><br/></div>";
+                                infoWindowArray[firstMap.Id] = myHtml;
+                                loadMarker(arrLatLng, infoWindowArray[firstMap.Id], firstMap.Id);
+                            }
+
+                            $.each(Maps, function (index, it) {
+                                var arrLatLng = new google.maps.LatLng(it.PosX, it.PosY);
+                                var myHtml = "<div class='map-description'> <strong>" + it.Name + "</strong><br/>Địa chỉ: <span>" + it.Address + "</span><br/>Điện thoại: <span>" + it.Phone + "</span><br/></div>";
+                                infoWindowArray[it.Id] = myHtml;
+                                loadMarker(arrLatLng, infoWindowArray[it.Id], it.Id);
+                            });
+
+
+                            moveToMaker(firstMap.Id);
+                        }
+
+                        function loadMarker(myLocation, myInfoWindow, id) {
+                            marker[id] = new google.maps.Marker({position: myLocation, map: map, visible: true});
+                            var popup = myInfoWindow;
+                            infowindow_array[id] = new google.maps.InfoWindow({content: popup});
+                            google.maps.event.addListener(marker[id], 'click', function () {
+                                if (id == old_id) return;
+                                if (old_id > 0)
+                                    infowindow_array[old_id].close();
+                                infowindow_array[id].open(map, marker[id]);
+                                old_id = id;
+                            });
+                            google.maps.event.addListener(infowindow_array[id], 'closeclick', function () {
+                                old_id = 0;
+                            });
+                        }
+
+                        function moveToMaker(id) {
+                            var location = marker[id].position;
+                            map.setCenter(location);
+                            if (old_id > 0)
+                                infowindow_array[old_id].close();
+                            infowindow_array[id].open(map, marker[id]);
+                            old_id = id;
+                        }
+                    </script>
+                    <!--End-->
+                    <script type="text/javascript">
+                        var firstMap = {
+                            "Id": 69,
+                            "Name": "ĐẠI HỌC BÁCH KHOA TP.HCM",
+                            "Address": "268 Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh",
+                            "Phone": "028 3864 7256",
+                            "PosX": 10.773266,
+                            "PosY": 106.6572787,
+                            "Index": 0,
+                            "Inactive": false
+                        };
+                        var Maps = [];
+                        window.Maps = Maps;
+                        window.Shop = {
+                            "Name": "ĐẠI HỌC BÁCH KHOA TP.HCM",
+                            "Email": "contact@hcmut.edu.vn",
+                            "Phone": "028 3864 7256",
+                            "Logo": null,
+                            "Fax": null,
+                            "Website": "hcmut.edu.vn",
+                            "Hotline": null,
+                            "Address": " 268 Lý Thường Kiệt, Phường 14, Quận 10, Hồ Chí Minh",
+                            "Fanpage": "https://www.facebook.com/dhbk",
+                            "Google": null,
+                            "Facebook": "https://www.facebook.com/dhbk",
+                            "Youtube": null,
+                            "Twitter": null,
+                            "IsBanner": false,
+                            "IsFixed": false,
+                            "BannerImage": null
+                        };
+
+                        $(document).ready(function () {
+                            initialize();
+                        });
+                    </script>
+                </div>
+                <div class="col-md-3">
+
+                    <!--Begin-->
+                    <div class="box-support-online">
+                        <h3><span>Hỗ trợ trực tuyến</span></h3>
+                        <div class="support-online-block">
+                            <div class="support-hotline">
+                                HOTLINE<br><span>19008198   </span>
+                            </div>
+                            <div class="support-item">
+                                <div class="name">
+                                    Email<br> <b>nova-team@gmail.com</b>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="http://skype.com" title="Nguyễn Thanh Nhân">
+                                            <img width="70px"
+                                                 src="http://www.skypeassets.com/i/scom/images/skype-buttons/chatbutton_32px.png">
+                                        </a>
+                                    </li>
+                                    <li class="social">
+                                        <a href="tel:0985959770" title="Nguyễn Thanh Nhân" target="_blank">
+                                            <img width="70px" src="{% static 'mobile_sale_app/images/zalo.jpg' %}"
+                                                 alt="Zalo">
+                                        </a>
+                                        <span class="phone">
+                                <a href="tel:0985959770" title="Nguyễn Thanh Nhân"
+                                   target="_blank">NovaTeam </a>
+                            </span>
+                                    </li>
+                                    <li class="social">
+                                        <a href="http://facebook.com" title="Nguyễn Thanh Nhân club" target="_blank">
+                                            <img width="30px" src="{% static 'mobile_sale_app/images/fb-icon.png' %}"
+                                                 alt="Facebook"></a>
+                                        <span class="phone">
+                                <a href="facebook.com" title="Nguyễn Thanh Nhân" target="_blank">NovaTeam </a>
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

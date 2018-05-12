@@ -1,0 +1,85 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% block body %}
+    <div class="adv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="breadcrumb clearfix">
+                        <ul>
+                            <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home">
+                                <a title="Đến trang chủ" href="/" itemprop="url"><span itemprop="title">Trang chủ</span></a>
+                            </li>
+                            <li class="icon-li"><strong>Thay đổi thông tin tài khoản</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="order-tracking-content clearfix">
+                        <h1 class="title"><span>Chỉnh sửa thông tin</span></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-3 col-xs-12 user-info">
+                    <form action="{% url 'mobile_sale_app:change_user_info' %}" method="post" id="id_form_user_info">
+                        {% csrf_token %}
+                        <div class="form-group" id="name">
+                            <label for="id_name">Họ và tên(*)</label>
+                            {{ account_form.name }}
+                            <span id='name_err' class="help-block hidden">Vui lòng nhập tên họ</span>
+                        </div>
+                        <div class="form-group" id="phone">
+                            <label for="id_phone_no">Số điện thoại(*)</label>
+                            {{ account_form.phone_no }}
+                            <span id='phone_err' class="help-block hidden">Vui lòng nhập SĐT nhận hàng</span>
+                        </div>
+                        <div class="form-group" id="birth_day">
+                            <label for="id_birth_day">Ngày sinh</label>
+                            {{ account_form.birth_day }}
+                            <span id="birth_day-err" class="help-block hidden">Vui lòng nhập đúng ngày tháng</span>
+                        </div>
+                        <div class="form-group" id="address">
+                            <label for="id_address">Địa chỉ(*)</label>
+                            {{ account_form.address }}
+                            <span id="address_err" class="help-block hidden">Vui lòng nhập địa chỉ</span>
+                        </div>
+                        <div class="form-group" id="social_id">
+                            <label for="id_social_id">Số CMND(*)</label>
+                            {{ account_form.social_id }}
+                            <span id="social_err" class="help-block hidden">Vui lòng nhập số CMND</span>
+                        </div>
+{#                        'name', 'phone_no', 'birth_day', 'address', 'gender', 'social_id'#}
+                        <div class="form-groupr" id="gender">
+                            <label for="id_gender">Giới tính</label>
+                            {{ account_form.gender }}
+                            <span class="help-block hidden"></span>
+                        </div>
+                        <div class="form-group" id="email">
+                            <label for="id_email">Email</label>
+                            {{ user_form.email }}
+                            <span id="email_err" class="help-block hidden">Vui lòng nhập đúng email</span>
+                        </div>
+                        <input type="submit" value="Lưu" class="btn btn-default">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

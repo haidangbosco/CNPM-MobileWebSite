@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% load humanize %}
+<html lang="en-us">
+<head>
+    <title>Quản lí đơn hàng</title>
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/dashboard.css"/>
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/responsive.css"/>
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/css/smoothproduct.css' %}">
+    <link rel="stylesheet" href="{% static 'mobile_sale_app/css/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'mobile_sale_app/js/bootstrap.min.js' %}"></script>
+</head>
+
+
+<body>
+
+    <!-- Container -->
+    <div id="container">
+
+
+        <!-- Header -->
+        <div id="header">
+            <div id="branding">
+
+                <h1 id="site-name"><a href="">Quản lí đơn hàng</a></h1>
+
+            </div>
+
+
+            <div id="user-tools">
+
+                Welcome,
+                <strong>{{ user.username }}</strong>.
+                <a href="/">View site</a> /
+                <a href="/admin/password_change/">Change password</a> /
+
+                <a href="/admin/logout/">Log out</a>
+
+            </div>
+
+
+        </div>
+        <!-- END Header -->
+    <!-- Content -->
+
+
+    </div>
+    <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="order-tracking-content clearfix">
+                            <h1 class="title"><span>Danh sách đơn hàng</span></h1>
+                            <div class="order-tracking-block">
+                                <div class="alert alert-danger hidden">
+                                    Không tìm thấy đơn hàng trong hệ thống. Vui lòng kiểm tra lại mã đơn hàng hoặc số
+                                    điện thoại của bạn.
+                                </div>
+                                <form class="form-inline order-input">
+                                    <div class="form-group hidden">
+                                        <label>Nhập mã đơn hàng</label>
+                                        <input type="text" class="form-control" placeholder="Mã số đơn hàng"/>
+
+                                        <button class="btn btn-primary">Xem ngay</button>
+                                    </div>
+                                </form>
+                                <div>
+                                    <div class="table-responsive clearfix order-tracking-info">
+                                        <table class="table table-hover table-mycart">
+                                            <thead>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Sản phẩm</th>
+                                                    <th>Nơi giao hàng</th>
+                                                    <th>Hình thức vận chuyển</th>
+                                                    <th>Thời gian đặt hàng</th>
+                                                    <th>Ghi chú</th>
+                                                    <th>Trạng thái</th>
+                                                    <th>Thành tiền</th>
+                                                    <th colspan="2">Hủy đơn hàng</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for order in orders %}
+                                                <tr rowspan="1">
+                                                    <td>{{ forloop.counter }}</td>
+                                                    <td>{{ order.products.name }}</td>
+                                                    <td>{{ order.deliver_to }}</td>
+                                                {% ifequal order.kind_delivery 'F' %}
+                                                    <td>Chuyển phát nhanh</td>
+                                                {% else %}
+                                                    <td>Chuyển phát cơ bản</td>
+                                                {% endifequal %}
+                                                    <td>{{ order.time_order }}</td>
+                                                {% ifequal order.note '' %}
+                                                    <td>---</td>
+                                                {% else %}
+                                                    <td>{{ order.note }}</td>
+                                                {% endifequal %}
+                                                <td>
+{#                                                        PAID = 1#}
+{#        UNPAID = 0#}
+{#        ON_WAY = 2#}
+{#        CANCEL = 3#}
+                                                    <select class="form-control" name="status" id="id_status">
+                                                        {% ifequal order.status 1 %}
+                                                            <option value="{{ order.status }}" selected>Hoàn thành</option>
+                                                            <option value="0">Đang xử lí</option>
+                                                            <option value="2">Đang vận chuyển</option>
+                                                        {% endifequal %}
+                                                        {% ifequal order.status 2 %}
+                                                            <option value="{{ order.status }}" selected>Đang vận chuyển</option>
+                                                            <option value="0">Đang xử lí</option>
+                                                            <option value="1">Hoàn thành</option>
+                                                        {% endifequal %}
+                                                        {% ifequal order.status 0 %}
+                                                            <option value="{{ order.status }}" selected>Đang xử lí</option>
+                                                            <option value="2">Đang vận chuyển</option>
+                                                            <option value="1">Hoàn thành</option>
+                                                        {% endifequal %}
+                                                    </option>
+
+                                                    </select>
+                                                </td>
+                                                <td>{{ order.get_total|intcomma }}</td>
+                                                {% ifequal order.status 2 %}
+                                                    <td>
+                                                        <form action="{% url 'mobile_sale_app:delete_order' %}" method="post">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="order_id" value="{{ order.id }}"/>
+                                                            <input class="btn delete-order" type="submit" value="Hủy">
+                                                        </form>
+                                                    </td>
+                                                {% else %}
+                                                    <td>
+                                                        <form action="{% url 'mobile_sale_app:delete_order' %}" method="post">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="order_id" value="{{ order.id }}"/>
+                                                            <input class="btn delete-order" type="submit" value="Hủy">
+                                                        </form>
+                                                    </td>
+                                                {% endifequal %}
+                                                <td>
+                                                    <form action="{% url 'mobile_sale_app:edit_order' %}" method="post">
+                                                            {% csrf_token %}
+                                                            <input type="hidden" name="order_id" value="{{ order.id }}"/>
+                                                            <input id="id_status_selected" type="hidden" name="status_updated" value="{{ order.status }}"/>
+                                                            <input class="btn delete-order" type="submit" value="Thay đổi">
+                                                    </form>
+                                                </td>
+                                                </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="{% static 'mobile_sale_app/js/script.js' %}"></script>
+</body>

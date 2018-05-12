@@ -1,0 +1,36 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% block body %}
+<div class="main">
+    <div class="container">
+        <div class="signup">
+            <div class="col-md-3">
+                <div class="register-content clearfix"> 
+                    {% if registered %}
+                    <div class="alert alert-success fade in">
+                        <button data-dismiss="alert" class="close"></button>
+                        <i class="fa-fw fa fa-check"></i>
+                            <strong>Success!</strong> Đăng ký thành công.
+                        </div>
+                    {% else %}
+                        {% if error %}
+                            <h1>{{ customer_form.errors }}</h1>
+                        {% endif %}
+                     <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                                <h2><span>Thông tin tài khoản</span></h2>
+                            {{ customer_form.as_ul }}
+                                <h2><span>Thông tin cá nhân</span></h2>
+                            {{ customer_profile_form.as_ul }}
+                                <input type="submit" name="" value="Sign Up" class="btn btn-default">
+                        </form>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

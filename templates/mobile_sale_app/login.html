@@ -1,0 +1,26 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="register-content clearfix">
+                        <h1 class="title"><span>Đăng nhập</span></h1>
+                        <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12 col-xs-offset-0 col-sm-offset-0">
+                            <form method="post" action="{% url 'mobile_sale_app:log_in' %}">
+                                {% csrf_token %}
+                                <label for="username" class="login-label">Tên tài khoản</label>
+                                <input type="text" class="form-control" id="username" name="username">
+                                <label for="password" class="login-label">Mật khẩu</label>
+                                <input type="password" class="form-control" id="password" name="password">
+                                <input type="submit" name="" value="Log in" class="btn btn-default">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,114 @@
+{% extends 'mobile_sale_app/base.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block body %}
+    <div class="adv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="breadcrumb clearfix">
+                        <ul>
+                            <li itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="home">
+                                <a title="Đến trang chủ" href="/" itemprop="url"><span itemprop="title">Trang chủ</span></a>
+                            </li>
+                            <li class="icon-li"><strong>Kiểm tra đơn hàng</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="order-tracking-content clearfix">
+                        <h1 class="title"><span>Danh sách đơn hàng</span></h1>
+                        <div class="order-tracking-block">
+                            <div class="alert alert-danger hidden">
+                                Không tìm thấy đơn hàng trong hệ thống. Vui lòng kiểm tra lại mã đơn hàng hoặc số
+                                điện thoại của bạn.
+                            </div>
+                            <form class="form-inline order-input">
+                                <div class="form-group hidden">
+                                    <label>Nhập mã đơn hàng</label>
+                                    <input type="text" class="form-control" placeholder="Mã số đơn hàng"/>
+
+                                    <button class="btn btn-primary">Xem ngay</button>
+                                </div>
+                            </form>
+                            <div>
+                                <div class="table-responsive clearfix order-tracking-info">
+                                    <table class="table table-hover table-mycart">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Sản phẩm</th>
+                                                <th>Nơi giao hàng</th>
+                                                <th>Hình thức vận chuyển</th>
+                                                <th>Thời gian đặt hàng</th>
+                                                <th>Ghi chú</th>
+                                                <th>Trạng thái</th>
+                                                <th>Thành tiền</th>
+                                                <th>Hủy đơn hàng</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for order in orders %}
+                                            <tr rowspan="1">
+                                                <td>{{ forloop.counter }}</td>
+                                                <td>{{ order.products.name }}</td>
+                                                <td>{{ order.deliver_to }}</td>
+                                            {% ifequal order.kind_delivery 'F' %}
+                                                <td>Chuyển phát nhanh</td>
+                                            {% else %}
+                                                <td>Chuyển phát cơ bản</td>
+                                            {% endifequal %}
+                                                <td>{{ order.time_order }}</td>
+                                            {% ifequal order.note '' %}
+                                                <td>---</td>
+                                            {% else %}
+                                                <td>{{ order.note }}</td>
+                                            {% endifequal %}
+                                            {% ifequal order 0 %}
+                                                <td>Đang vận chuyển</td>
+                                            {% else %}
+                                                <td>Hoàn thành</td>
+                                            {% endifequal %}
+                                            <td>{{ order.get_total|intcomma }}</td>
+                                            {% ifequal order.status 2 %}
+                                                <td>
+                                                    <form action="{% url 'mobile_sale_app:delete_order' %}" method="post">
+                                                        {% csrf_token %}
+                                                        <input type="hidden" name="order_id" value="{{ order.id }}"/>
+                                                        <input class="btn delete-order" type="submit" value="Hủy">
+                                                    </form>
+                                                </td>
+                                            {% else %}
+                                                <td>
+                                                    <form action="{% url 'mobile_sale_app:delete_order' %}" method="post">
+                                                        {% csrf_token %}
+                                                        <input type="hidden" name="order_id" value="{{ order.id }}"/>
+                                                        <input class="btn delete-order" type="submit" value="Hủy">
+                                                    </form>
+                                                </td>
+                                            {% endifequal %}
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="button text-right">
+                                    <a class="btn btn-primary" href="{% url 'mobile_sale_app:index' %}">Tiếp tục mua hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
