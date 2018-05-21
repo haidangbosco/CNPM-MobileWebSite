@@ -3,60 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a574b3b6-31ed-42f0-b930-b0466ec2fcc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0001_initial.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0002_employee.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0003_sale.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0004_product.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0005_comment_order.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0006_auto_20180405_2236.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0007_auto_20180405_2332.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0008_auto_20180405_2334.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0009_auto_20180405_2335.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0010_auto_20180405_2346.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0011_auto_20180405_2348.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0012_auto_20180405_2356.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0013_auto_20180405_2358.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0014_auto_20180405_2359.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0015_auto_20180408_2050.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0016_auto_20180408_2114.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0017_customerprofileinfo_birth_day.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0018_auto_20180408_2354.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0019_auto_20180409_1023.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0020_auto_20180418_1052.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0021_product_product_code.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0022_sale_name.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0023_auto_20180418_1113.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0024_auto_20180418_1331.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0025_product_description.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0026_auto_20180419_1409.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0027_auto_20180419_1632.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0028_auto_20180419_1636.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0029_auto_20180419_1638.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0030_auto_20180419_1951.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0031_auto_20180419_1951.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0032_auto_20180419_1957.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0033_auto_20180419_2000.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0034_auto_20180419_2002.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0035_auto_20180419_2004.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0036_auto_20180419_2006.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0037_auto_20180419_2010.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0038_auto_20180419_2012.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0039_auto_20180419_2030.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0040_auto_20180419_2037.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0041_auto_20180419_2041.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0042_auto_20180419_2043.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0043_auto_20180419_2044.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0044_auto_20180422_1333.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0045_auto_20180422_1343.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0046_auto_20180422_1345.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/migrations/0047_auto_20180422_1844.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/models.py" afterPath="$PROJECT_DIR$/mobile_sale_app/models.py" />
-      <change beforePath="$PROJECT_DIR$/mobile_sale_app/urls.py" afterPath="$PROJECT_DIR$/mobile_sale_app/urls.py" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/mobile_sale_app/forms.py" afterPath="$PROJECT_DIR$/mobile_sale_app/forms.py" />
       <change beforePath="$PROJECT_DIR$/mobile_sale_app/views.py" afterPath="$PROJECT_DIR$/mobile_sale_app/views.py" />
-      <change beforePath="$PROJECT_DIR$/static/mobile_sale_app/css/style.css" afterPath="$PROJECT_DIR$/static/mobile_sale_app/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/static/mobile_sale_app/js/script.js" afterPath="$PROJECT_DIR$/static/mobile_sale_app/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html" afterPath="$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html" />
+      <change beforePath="$PROJECT_DIR$/templates/mobile_sale_app/about_team.html" afterPath="$PROJECT_DIR$/templates/mobile_sale_app/about_team.html" />
+      <change beforePath="$PROJECT_DIR$/templates/mobile_sale_app/login.html" afterPath="$PROJECT_DIR$/templates/mobile_sale_app/login.html" />
+      <change beforePath="$PROJECT_DIR$/templates/mobile_sale_app/signup.html" afterPath="$PROJECT_DIR$/templates/mobile_sale_app/signup.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,18 +37,28 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile_sale_app/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="323">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/script.js">
+      <file leaf-file-name="about_team.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/about_team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="159" column="31" lean-forward="false" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+            <state relative-caret-position="266">
+              <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_sale_app/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -105,31 +67,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="421" column="55" lean-forward="false" selection-start-line="421" selection-start-column="55" selection-end-line="421" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="239" column="68" lean-forward="false" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#1003#1021#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile_sale_app/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
+            <state relative-caret-position="119">
+              <caret line="126" column="72" lean-forward="false" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -138,34 +77,31 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="1805" column="33" lean-forward="false" selection-start-line="1805" selection-start-column="33" selection-end-line="1805" selection-end-column="33" />
+            <state relative-caret-position="30821">
+              <caret line="1813" column="33" lean-forward="false" selection-start-line="1813" selection-start-column="33" selection-end-line="1813" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile_sale_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="277" column="55" lean-forward="false" selection-start-line="277" selection-start-column="49" selection-end-line="277" selection-end-column="55" />
+            <state relative-caret-position="629">
+              <caret line="293" column="27" lean-forward="true" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
               <folding>
-                <marker date="1525236410306" expanded="false" signature="10964:10971" ph="×" />
-                <marker date="1525236410306" expanded="false" signature="12977:12993" ph="..." />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobile_sale_app/views.py">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3179">
-              <caret line="187" column="29" lean-forward="false" selection-start-line="187" selection-start-column="29" selection-end-line="187" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,8 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Sản phẩm</find>
-      <find>print</find>
       <find>window.shop</find>
       <find>giới t</find>
       <find>shop</find>
@@ -214,6 +148,8 @@
       <find>product_de</find>
       <find>endblock</find>
       <find>block</find>
+      <find>Kiểm tra</find>
+      <find>Order</find>
     </findStrings>
     <replaceStrings>
       <replace>products</replace>
@@ -232,8 +168,6 @@
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/footer.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/header.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/left_account_bar.html" />
-        <option value="$PROJECT_DIR$/templates/mobile_sale_app/signup.html" />
-        <option value="$PROJECT_DIR$/templates/mobile_sale_app/login.html" />
         <option value="$PROJECT_DIR$/static/mobile_sale_app/css/smoothproduct.css" />
         <option value="$PROJECT_DIR$/mobile_sale_app/templatetags/filter_extras.py" />
         <option value="$PROJECT_DIR$/MobileSaleWeb/urls.py" />
@@ -249,14 +183,12 @@
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/delivery_regulations.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/payment_regulations.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/contact.html" />
-        <option value="$PROJECT_DIR$/templates/mobile_sale_app/about_team.html" />
         <option value="$PROJECT_DIR$/static/mobile_sale_app/js/momentjs.js" />
         <option value="$PROJECT_DIR$/static/mobile_sale_app/js/validatejs.js" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/change_user_info.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/base.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/home.html" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/payment.html" />
-        <option value="$PROJECT_DIR$/mobile_sale_app/forms.py" />
         <option value="$PROJECT_DIR$/static/mobile_sale_app/js/slide.js" />
         <option value="$PROJECT_DIR$/mobile_sale_app/admin.py" />
         <option value="$PROJECT_DIR$/mobile_sale_app/models.py" />
@@ -264,7 +196,11 @@
         <option value="$PROJECT_DIR$/static/mobile_sale_app/css/style.css" />
         <option value="$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html" />
         <option value="$PROJECT_DIR$/static/mobile_sale_app/js/script.js" />
+        <option value="$PROJECT_DIR$/mobile_sale_app/forms.py" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/login.html" />
         <option value="$PROJECT_DIR$/mobile_sale_app/views.py" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/signup.html" />
+        <option value="$PROJECT_DIR$/templates/mobile_sale_app/about_team.html" />
       </list>
     </option>
   </component>
@@ -297,7 +233,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -382,6 +317,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,7 +408,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25466892" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22844176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,7 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,14 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="37" column="94" lean-forward="true" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,14 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="49" column="55" lean-forward="true" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -669,7 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="33" column="63" lean-forward="false" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,9 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="63" column="175" lean-forward="false" selection-start-line="63" selection-start-column="175" selection-end-line="63" selection-end-column="175" />
-          <folding>
-            <element signature="e#1468#1474#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="102" column="102" lean-forward="false" selection-start-line="102" selection-start-column="102" selection-end-line="102" selection-end-column="102" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,17 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#979#1132#0#HTML" expanded="false" />
-            <element signature="e#1174#1221#0#HTML" expanded="false" />
-            <element signature="e#1285#1438#0#HTML" expanded="false" />
-            <element signature="e#1650#1803#0#HTML" expanded="false" />
-            <element signature="e#1845#1892#0#HTML" expanded="false" />
-            <element signature="e#1988#2141#0#HTML" expanded="false" />
-            <element signature="e#2367#2520#0#HTML" expanded="false" />
-            <element signature="e#2562#2609#0#HTML" expanded="false" />
-            <element signature="e#2704#2857#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,35 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#967#1120#0#HTML" expanded="false" />
-            <element signature="e#2166#2319#0#HTML" expanded="false" />
-            <element signature="e#2361#2408#0#HTML" expanded="false" />
-            <element signature="e#2515#2673#0#HTML" expanded="false" />
-            <element signature="e#3142#3342#0#HTML" expanded="false" />
-            <element signature="e#3380#3445#0#HTML" expanded="false" />
-            <element signature="e#3607#3672#0#HTML" expanded="false" />
-            <element signature="e#3826#3891#0#HTML" expanded="false" />
-            <element signature="e#4167#4232#0#HTML" expanded="false" />
-            <element signature="e#4399#4464#0#HTML" expanded="false" />
-            <element signature="e#4748#4901#0#HTML" expanded="false" />
-            <element signature="e#4967#5120#0#HTML" expanded="false" />
-            <element signature="e#5162#5209#0#HTML" expanded="false" />
-            <element signature="e#5344#5502#0#HTML" expanded="false" />
-            <element signature="e#5736#5912#0#HTML" expanded="false" />
-            <element signature="e#6007#6160#0#HTML" expanded="false" />
-            <element signature="e#6202#6249#0#HTML" expanded="false" />
-            <element signature="e#6394#6552#0#HTML" expanded="false" />
-            <element signature="e#6594#6641#0#HTML" expanded="false" />
-            <element signature="e#7329#7376#0#HTML" expanded="false" />
-            <element signature="e#8486#8639#0#HTML" expanded="false" />
-            <element signature="e#8681#8728#0#HTML" expanded="false" />
-            <element signature="e#8793#8951#0#HTML" expanded="false" />
-            <element signature="e#8993#9040#0#HTML" expanded="false" />
-            <element signature="e#9631#9789#0#HTML" expanded="false" />
-            <element signature="e#9831#9878#0#HTML" expanded="false" />
-            <element signature="e#10218#10376#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -757,49 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
-          <folding>
-            <element signature="e#981#1120#0#HTML" expanded="false" />
-            <element signature="e#1162#1215#0#HTML" expanded="false" />
-            <element signature="e#1272#1406#0#HTML" expanded="false" />
-            <element signature="e#1446#1550#0#HTML" expanded="false" />
-            <element signature="e#2207#2341#0#HTML" expanded="false" />
-            <element signature="e#2379#2413#0#HTML" expanded="false" />
-            <element signature="e#2905#3039#0#HTML" expanded="false" />
-            <element signature="e#3077#3111#0#HTML" expanded="false" />
-            <element signature="e#3359#3463#0#HTML" expanded="false" />
-            <element signature="e#3797#3901#0#HTML" expanded="false" />
-            <element signature="e#4164#4268#0#HTML" expanded="false" />
-            <element signature="e#4643#4777#0#HTML" expanded="false" />
-            <element signature="e#4815#4849#0#HTML" expanded="false" />
-            <element signature="e#5364#5398#0#HTML" expanded="false" />
-            <element signature="e#5574#5608#0#HTML" expanded="false" />
-            <element signature="e#5742#5876#0#HTML" expanded="false" />
-            <element signature="e#5914#5948#0#HTML" expanded="false" />
-            <element signature="e#5989#6093#0#HTML" expanded="false" />
-            <element signature="e#6410#6544#0#HTML" expanded="false" />
-            <element signature="e#6582#6616#0#HTML" expanded="false" />
-            <element signature="e#6778#6882#0#HTML" expanded="false" />
-            <element signature="e#7061#7195#0#HTML" expanded="false" />
-            <element signature="e#7233#7267#0#HTML" expanded="false" />
-            <element signature="e#7526#7630#0#HTML" expanded="false" />
-            <element signature="e#7820#7954#0#HTML" expanded="false" />
-            <element signature="e#7992#8026#0#HTML" expanded="false" />
-            <element signature="e#8069#8103#0#HTML" expanded="false" />
-            <element signature="e#8159#8293#0#HTML" expanded="false" />
-            <element signature="e#8565#8699#0#HTML" expanded="false" />
-            <element signature="e#8804#8908#0#HTML" expanded="false" />
-            <element signature="e#9174#9308#0#HTML" expanded="false" />
-            <element signature="e#9607#9741#0#HTML" expanded="false" />
-            <element signature="e#9783#9817#0#HTML" expanded="false" />
-            <element signature="e#9937#10041#0#HTML" expanded="false" />
-            <element signature="e#10126#10260#0#HTML" expanded="false" />
-            <element signature="e#10302#10336#0#HTML" expanded="false" />
-            <element signature="e#10435#10569#0#HTML" expanded="false" />
-            <element signature="e#10611#10645#0#HTML" expanded="false" />
-            <element signature="e#10712#10816#0#HTML" expanded="false" />
-            <element signature="e#10873#10907#0#HTML" expanded="false" />
-            <element signature="e#10950#10984#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -807,25 +637,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/momentjs.js" />
     <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/validatejs.js" />
-    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/about_team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/payment_regulations.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="20" column="55" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="20" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="65" column="59" lean-forward="true" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="34" column="62" lean-forward="false" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="189" column="34" lean-forward="false" selection-start-line="189" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,52 +708,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="421" column="55" lean-forward="false" selection-start-line="421" selection-start-column="55" selection-end-line="421" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile_sale_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile_sale_app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="1805" column="33" lean-forward="false" selection-start-line="1805" selection-start-column="33" selection-end-line="1805" selection-end-column="33" />
+        <state relative-caret-position="30821">
+          <caret line="1813" column="33" lean-forward="false" selection-start-line="1813" selection-start-column="33" selection-end-line="1813" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="239" column="68" lean-forward="false" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#1003#1021#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/mobile_sale_app/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="2703">
           <caret line="159" column="31" lean-forward="false" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
           <folding />
         </state>
@@ -944,22 +726,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/product_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="4709">
           <caret line="277" column="55" lean-forward="false" selection-start-line="277" selection-start-column="49" selection-end-line="277" selection-end-column="55" />
           <folding>
-            <marker date="1525236410306" expanded="false" signature="10964:10971" ph="×" />
-            <marker date="1525236410306" expanded="false" signature="12977:12993" ph="..." />
+            <marker date="1525964426880" expanded="false" signature="10964:10971" ph="×" />
+            <marker date="1525964426880" expanded="false" signature="12977:12993" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3621">
+          <caret line="239" column="68" lean-forward="false" selection-start-line="239" selection-start-column="68" selection-end-line="239" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+            <element signature="e#1003#1021#0" expanded="false" />
+            <marker date="1525964427063" expanded="true" signature="4649:4721" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="126" column="72" lean-forward="false" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile_sale_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3179">
-          <caret line="187" column="29" lean-forward="false" selection-start-line="187" selection-start-column="29" selection-end-line="187" selection-end-column="29" />
+        <state relative-caret-position="629">
+          <caret line="293" column="27" lean-forward="true" selection-start-line="293" selection-start-column="27" selection-end-line="293" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile_sale_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mobile_sale_app/about_team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

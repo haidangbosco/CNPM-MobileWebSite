@@ -26,7 +26,7 @@ class CustomerForm(forms.ModelForm):
             self.fields['username'].label = "Tên tài khoản"
             self.fields['password'].label = "Mật khẩu"
 
-
+# Ho so ca nhan
 class CustomerProfileInfoForm(forms.ModelForm):
     class Meta:
         model = CustomerProfileInfo
@@ -49,6 +49,7 @@ class CustomerProfileInfoForm(forms.ModelForm):
         }
 
 
+# Thanh toán
 class PaymentForm(forms.ModelForm):
     class Meta:
         model = Order
@@ -72,7 +73,7 @@ class PaymentForm(forms.ModelForm):
             'deliver_to': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Địa chỉ nơi giao hàng'}),
         }
 
-
+# Doi mat khau
 class ChangePasswordForm(forms.Form):
     old_password = forms.CharField(label='Mật khẩu cũ', max_length=32, widget=forms.PasswordInput(
         attrs={'type': 'password', 'class': 'form-control'}))
@@ -88,7 +89,7 @@ class ChangePasswordForm(forms.Form):
             raise forms.ValidationError("The two password fields did not match.")
         return self.cleaned_data
 
-
+# Form cho bình luận
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
