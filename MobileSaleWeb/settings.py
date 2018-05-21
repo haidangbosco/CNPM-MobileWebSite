@@ -18,7 +18,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 
-
+PIPELINE_YUGLIFY_BINARY = 'yuglify'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -127,11 +127,11 @@ USE_TZ = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
 
-STATIC_ROOT = "/var/www/dangnguyenbosco.pythonanywhere.com/assets/"
+STATIC_ROOT = os.path.join(BASE_DIR, "assets")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
-    '/var/www/static/',
+    #'/var/www/static/',
 ]
 
 MEDIA_URL = '/media/'
