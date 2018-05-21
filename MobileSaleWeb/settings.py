@@ -127,7 +127,7 @@ USE_TZ = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
 
-STATIC_ROOT = "/var/www/dangnguyenbosco.pythonanywhere.com/static/"
+STATIC_ROOT = "/var/www/dangnguyenbosco.pythonanywhere.com/assets/"
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
