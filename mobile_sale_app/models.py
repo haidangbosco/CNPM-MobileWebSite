@@ -4,11 +4,13 @@ import uuid
 from django.contrib.auth.models import User
 from django.db import models
 from django.urls import reverse
-
+from django.utils.timezone import now
 
 # Create your models here.
 
 # Customer Model
+
+
 class CustomerProfileInfo(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=True)
@@ -238,4 +240,3 @@ class Comment(models.Model):
     time = models.DateTimeField(blank=False, default=datetime.datetime.now())
     content = models.CharField(blank=True, max_length=264)
     product = models.ForeignKey('Product', on_delete=models.CASCADE)
-
